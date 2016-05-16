@@ -1,0 +1,20 @@
+{{!< default}}
+
+{{> header}}
+
+<main class="content" role="main">
+	<section class="{{post_class}}">
+		{{#post}}
+			<div class="post">
+				<div class="row">
+					<div class="three columns">
+						<p><b>Date: </b> {{date format="DD MM YYYY"}}</p>
+					</div>
+					<div class="nine columns">
+						{{content}}
+					</div>
+				</div>
+			</div>
+		{{/post}}
+	</section>
+</main>
